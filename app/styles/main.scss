@@ -1,0 +1,20 @@
+// bower:scss
+// endbower
+
+@import "generycs/reset";
+ /* =============================================================================
+ --  @project : Cartier Burtin
+ --  @theme   : Cartier Burtin
+ --  @author  : Mariano Molina
+ --  @date    : 2016-10-15
+ ============================================================================= */
+@import "generycs/variables";
+@import "generycs/mixins";
+@import "generycs/icons";
+@import "generycs/fonts";
+@import "generycs/generycs";
+// =============================================================================
+// -- Main theme
+// =============================================================================
+@import "components/main_slider";
+@import "layout/footer";

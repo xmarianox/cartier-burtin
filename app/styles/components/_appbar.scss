@@ -1,0 +1,108 @@
+// =============================================================================
+// - Appbar elements
+// =============================================================================
+.appbar {
+	@include size(100%, auto);
+	padding: 6px 16px;
+	background: $white;
+	overflow: hidden;
+	// position
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	// flex
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+	.social {
+		margin: auto 18px auto auto;
+	}
+
+	// =============================================================================
+	// - Responsive
+	// =============================================================================
+	@media #{$breakpoint-tablet-port} {
+		.social {
+			margin: auto 0px auto auto;
+		}
+		.btn_lines {
+			display: none;
+		}
+	}
+}
+
+// social networks
+.social {
+	// flex
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+	li {
+		margin: 0 4px;
+		text-align: center;
+	}
+
+	a {
+		@include size(32px, 32px);
+		@include border-radius(50%);
+		overflow: hidden;
+		display: block;
+		background: $lightBlue;
+		padding: 7px;
+	}
+}
+
+// =============================================================================
+// - Components for big screens.
+// =============================================================================
+.navigation {
+	@include size(100%, auto);
+	max-width: $secure-area;
+	margin: auto;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	li {
+		margin: auto;
+
+		&.active {
+			a {
+				color: $lightBlue;
+			}
+		}
+	}
+
+	a {
+		font-family: $montserratSemiBold;
+		@include font-size(12px);
+		@include line-height(24px);
+		text-decoration: none;
+		color: $darkGray;
+
+		&:hover {
+			color: $lightBlue;
+		}
+	}
+
+	@media #{$breakpoint-tablet-port} {}
+	@media #{$breakpoint-laptop-pc} {
+		a {
+			@include font-size(14px);
+		}
+	}
+}
+

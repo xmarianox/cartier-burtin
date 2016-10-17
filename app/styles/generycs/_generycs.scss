@@ -1,0 +1,55 @@
+// =============================================================================
+// - Generycs elements
+// =============================================================================
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+  @include transition(2ms);
+}
+
+body {
+  background-color: $white;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: $black;
+
+  &.ab-hidden {
+    overflow: hidden;
+  }
+}
+
+.browserupgrade {
+  margin: 0 auto;
+  background: $white;
+  color: $orange;
+  padding: 16px;
+}
+
+hr {
+  @include size(90%, auto);
+  border: 0;
+  border-top: 1px solid $white;
+  margin: 30px auto;
+
+  @media #{$breakpoint-tablet-land} {
+    max-width: 400px;
+  }
+}
+
+.visible {
+  &_mobile {
+    display: block;
+  }
+  &_desktop {
+    display: none;
+  }
+
+  @media #{$breakpoint-tablet-port} {
+    &_mobile {
+      display: none;
+    }
+    &_desktop {
+      display: block;
+    }
+  }
+}

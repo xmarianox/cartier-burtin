@@ -1,0 +1,22 @@
+// =============================================================================
+// ICONS
+// =============================================================================
+.ic {
+	display: inline-block;
+
+	&_logo_cb {
+		background: url(../images/ic_logo_cb.svg) center center no-repeat;
+		background-size: cover;
+		@include size(288px, 154px);
+
+		&.small {
+			@include size(153px, 83px);
+		}
+	}
+
+	@media #{$breakpoint-smartphone-big} {
+		&_logo_cb {
+			@include size(388px, 209px);
+		}
+	}
+}

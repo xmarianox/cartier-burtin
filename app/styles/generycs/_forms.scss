@@ -1,0 +1,85 @@
+// =============================================================================
+// - forms elements
+// =============================================================================
+// reset placeHolder color
+@include placeholder($gray);
+
+input {
+	@include size(100%, 44px);
+	border: 1px solid $gray;
+	@include border-radius(0px);
+	background-color: $white;
+	appearance: none;
+	padding: 0 8px;
+	// texts
+	font-family: $montserratRegular;
+	@include font-size(20px);
+	@include line-height(44px);
+	text-align: center;
+	color: $gray;
+}
+
+.select_container {
+	@include size(100%, 44px);
+	border: 1px solid $gray;
+	@include border-radius(0px);
+	background-color: $white;
+	padding: 0 8px;
+
+	select {
+		@include size(100%, 100%);
+		border: none;
+		@include border-radius(0px);
+		background-color: $white;
+		appearance: none;
+		// texts
+		font-family: $montserratRegular;
+		@include font-size(20px);
+		@include line-height(44px);
+		text-align: center;
+		color: $gray;
+	}
+
+	option {
+		font-family: $montserratRegular;
+		@include font-size(20px);
+		@include line-height(44px);
+		text-align: center;
+		color: $gray;
+	}
+}
+
+form {
+	@include size(100%, auto);
+	overflow: hidden;
+	margin: 0 auto 20px;
+
+    @media #{$breakpoint-tablet-port} {
+		padding: 0 36px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+.form_control {
+	@include size(100%, auto);
+	margin: 0 auto 19px;
+
+	&.flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@media #{$breakpoint-tablet-port} {
+		margin: 0 10px 19px;
+	}
+}
+
+.date_control {
+	@include size(45%, auto);
+}
