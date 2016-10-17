@@ -182,13 +182,20 @@
 			flex-wrap: nowrap;
 			align-items: stretch;
 			justify-content: center;
+			background-color: $black;
 		}
 
 		li {
-			@include size(100%, 100%);
+			@include size(33.333%, 100%);
 			border-bottom: 0px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: stretch;
+			justify-content: center;
 
 			&:nth-child(2) {
+				//@include size(calc(33.333% - 2px), 100%);
 				border-left: 1px solid $black;
 				border-right: 1px solid $black;
 			}
@@ -196,6 +203,7 @@
 
 		img {
 			@include size(100%, 100%);
+			object-fit: cover;
 			@include transition(20ms);
 		}
 	}
