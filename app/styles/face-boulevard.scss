@@ -1,0 +1,21 @@
+// bower:scss
+// endbower
+
+@import "generycs/reset";
+ /* =============================================================================
+ --  @project : FACE Boulevard
+ --  @theme   : FACE Boulevard
+ --  @author  : Mariano Molina
+ --  @date    : 2016-10-17
+ ============================================================================= */
+@import "generycs/variables";
+@import "generycs/mixins";
+@import "generycs/icons";
+@import "generycs/fonts";
+@import "generycs/generycs";
+// =============================================================================
+// -- Main theme
+// =============================================================================
+@import "components/buttons";
+@import "components/appbar";
+@import "layout/sections";

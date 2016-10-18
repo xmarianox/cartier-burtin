@@ -1,0 +1,31 @@
+// =============================================================================
+// -- Sections
+// =============================================================================
+section {
+	@include size(100%, auto);
+	overflow: hidden;
+
+	&#face-boulevard {
+		img, picture {
+			@include size(100%, auto);
+			display: block;
+		}
+	}
+}
+
+.section_separator {
+	background: $teal url(../images/bg-divider.jpg) center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 16px;
+
+	.ic {
+		margin-bottom: 15px;
+	}
+
+	h2 {
+		font-family: $gothamBook;
+		@include font-size(19px);
+		@include line-height(23px);
+	}
+}

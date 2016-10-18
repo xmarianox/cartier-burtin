@@ -4,7 +4,7 @@
 .appbar {
 	@include size(100%, auto);
 	padding: 6px 16px;
-	background: $white;
+	background: $ultraDarkGray;
 	overflow: hidden;
 	// position
 	position: fixed;
@@ -19,89 +19,59 @@
 	align-items: center;
 	justify-content: space-between;
 
-	.social {
-		margin: auto 18px auto auto;
-	}
+
 
 	// =============================================================================
 	// - Responsive
 	// =============================================================================
-	@media #{$breakpoint-tablet-port} {
-		.social {
-			margin: auto 0px auto auto;
-		}
-		.btn_lines {
-			display: none;
-		}
-	}
-}
-
-// social networks
-.social {
-	// flex
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: space-between;
-
-	li {
-		margin: 0 4px;
-		text-align: center;
-	}
-
-	a {
-		@include size(32px, 32px);
-		@include border-radius(50%);
-		overflow: hidden;
-		display: block;
-		background: $lightBlue;
-		padding: 7px;
-	}
+	@media #{$breakpoint-tablet-port} {}
 }
 
 // =============================================================================
 // - Components for big screens.
 // =============================================================================
-.navigation {
-	@include size(100%, auto);
-	max-width: $secure-area;
-	margin: auto;
+menu {
+	@include size(75%, auto);
+	background-color: $ultraDarkGray;
+	overflow: hidden;
+	padding: 16px;
 
-	ul {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
+	@include transition(200ms);
+	@include opacity(0);
+	// position
+	position: fixed;
+	top: 58px;
+	right: 0;
+	z-index: -1;
+
+	&.visible {
+		z-index: 10;
+		@include opacity(1);
 	}
 
 	li {
-		margin: auto;
+		font-family: $gothamMedium;
+		@include font-size(18px);
+		@include line-height(44px);
 
-		&.active {
-			a {
-				color: $lightBlue;
-			}
+		&:after {
+			content: '';
+			display: block;
+			@include size(40px, 13px);
+			background-color: $lightOrange;
 		}
 	}
 
 	a {
-		font-family: $montserratSemiBold;
-		@include font-size(12px);
-		@include line-height(24px);
+		color: $white;
 		text-decoration: none;
-		color: $darkGray;
-
-		&:hover {
-			color: $lightBlue;
-		}
+		text-shadow: 0 0 10px $black-70;
 	}
 
-	@media #{$breakpoint-tablet-port} {}
-	@media #{$breakpoint-laptop-pc} {
-		a {
-			@include font-size(14px);
+	@media #{$breakpoint-smartphone-big} {
+		li {
+			@include font-size(22px);
+			@include line-height(48px);
 		}
 	}
 }

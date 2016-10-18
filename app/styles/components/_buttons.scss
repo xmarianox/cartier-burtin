@@ -26,11 +26,9 @@
     background-color: $lightBlue;
     border: 1px solid $lightBlue;
     // texts
-    font-family: $montserratBold;
     @include font-size(24px);
     @include line-height(44px);
   }
-
 }
 
 // =============================================================================

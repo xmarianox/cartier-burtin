@@ -10,6 +10,7 @@ $secure-area: 1032px;
 // -- FONTS
 // =============================================================================
 $gothamMedium: 'gothammedium';
+$gothamBook: 'gotham_bookregular';
 // $montserratSemiBold: 'montserratsemibold';
 // $montserratBold: 'montserratbold';
 // =============================================================================
@@ -29,11 +30,14 @@ $black-90: rgba(0,0,0,.97);
 
 // theme
 $orange: #e2761f;
+$lightOrange: #f2b83f;
 $green: #2ebd59;
 $darkGreen: #008761;
 
 $red: #ff4734;
 $yellow: #ffb403;
+
+$teal: #dad4c5;
 
 $blue: #3582e7;
 $lightBlue: #80d1e1;
@@ -41,6 +45,7 @@ $lightBlue: #80d1e1;
 $gray: #a6a6a6;
 $lightGray: rgba(186, 186, 186, 0.76);
 $darkGray: #606060;
+$ultraDarkGray: #2f2d2c;
 
 $twitter: #55acee;
 $facebook: #4267b2;

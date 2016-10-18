@@ -53,3 +53,9 @@ hr {
     }
   }
 }
+
+.main_container {
+  @include size(100%, auto);
+  overflow: hidden;
+  margin-top: 58px;
+}
