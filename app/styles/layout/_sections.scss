@@ -11,6 +11,25 @@ section {
 			display: block;
 		}
 	}
+
+	&#departamentos {
+		background: url(../images/m_bg_departamentos.jpg) center center no-repeat;
+		background-size: cover;
+		min-height: 600px;
+		padding: 0 16px;
+	}
+
+	.indicator {
+		background-color: $lightOrange;
+		margin: 0 auto;
+    	max-width: 230px;
+
+		font-family: $gothamMedium;
+		color: $white;
+		@include font-size(20px);
+		@include line-height(38px);
+		text-align: center;
+	}
 }
 
 .section_separator {
@@ -29,3 +48,43 @@ section {
 		@include line-height(23px);
 	}
 }
+
+// =============================================================================
+// -- Departementos
+// =============================================================================
+.departamentos_selector {
+	@include size(100%, 100%);
+	overflow: hidden;
+	margin-top: 60px;
+	// flex
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	li {
+		@include size(100%, auto);
+		background-color: $ultraDarkGray;
+		text-align: center;
+		margin: auto auto 21px;
+	}
+
+	a {
+		font-family: $gothamMedium;
+		color: $white;
+		@include font-size(20px);
+		@include line-height(48px);
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
