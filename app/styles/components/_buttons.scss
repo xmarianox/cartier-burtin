@@ -10,24 +10,22 @@
   @include border-radius(0px);
   border: 1px solid transparent;
   background: transparent;
-  @include size(auto, 50px);
+  @include size(auto, 48px);
   cursor: pointer;
   // text
   text-decoration: none;
-  @include font-size(19px);
+  @include font-size(20px);
   @include line-height(46px);
   vertical-align: middle;
   white-space: nowrap;
-  padding: 0 20px;
+  padding: 0 10px;
+  font-family: $gothamMedium;
 
   //
   &_primary {
-    @include size(100%, 44px);
-    background-color: $lightBlue;
-    border: 1px solid $lightBlue;
-    // texts
-    @include font-size(24px);
-    @include line-height(44px);
+    background-color: $ultraDarkGray80;
+    border: 1px solid $ultraDarkGray80;
+    max-width: 400px;
   }
 }
 

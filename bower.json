@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "vegas": "^2.3.1",
     "picturefill": "^3.0.2",
-    "browser-detector": "^4.0.1"
+    "browser-detector": "^4.0.1",
+    "slick-carousel": "slick.js#^1.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

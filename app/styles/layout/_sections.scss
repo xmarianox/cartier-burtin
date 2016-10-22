@@ -5,6 +5,22 @@ section {
 	@include size(100%, auto);
 	overflow: hidden;
 
+	.indicator {
+		@include size(100%, auto);
+		max-width: 260px;
+		background-color: $lightOrange;
+		margin: 0 auto;
+		// text
+		font-family: $gothamMedium;
+		color: $white;
+		@include font-size(18px);
+		@include line-height(38px);
+		text-align: center;
+	}
+
+	// =============================================================================
+	// -- Face Boulevard
+	// =============================================================================
 	&#face-boulevard {
 		img, picture {
 			@include size(100%, auto);
@@ -12,23 +28,103 @@ section {
 		}
 	}
 
+	// =============================================================================
+	// -- Departementos
+	// =============================================================================
 	&#departamentos {
-		background: url(../images/m_bg_departamentos.jpg) center center no-repeat;
+		background: url(../images/face-boulevard/m_bg_departamentos.jpg) center center no-repeat;
 		background-size: cover;
-		min-height: 600px;
+		min-height: 460px;
 		padding: 0 16px;
 	}
 
-	.indicator {
-		background-color: $lightOrange;
-		margin: 0 auto;
-    	max-width: 230px;
+	// =============================================================================
+	// -- Avance de Obra
+	// =============================================================================
+	&#avance_de_obra {
+		background: url(../images/face-boulevard/m_bg_avance.jpg) center center no-repeat;
+		background-size: cover;
+		min-height: 460px;
+		padding: 0 16px;
 
-		font-family: $gothamMedium;
-		color: $white;
-		@include font-size(20px);
-		@include line-height(38px);
-		text-align: center;
+		article {
+			@include size(100%, 100%);
+			min-height: 460px;
+			// flex
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.container {
+			margin: auto;
+			text-align: center;
+		}
+
+		h2 {
+			font-family: $gothamMedium;
+			@include font-size(20px);
+			@include line-height(24px);
+			text-shadow: 0 0 10px $black-70;
+			color: $white;
+			margin-bottom: 30px;
+		}
+
+		a {
+			margin: 30px auto 0;
+			text-align: center;
+			text-decoration: none;
+
+			.ic {
+				margin: 0 auto 15px;
+			}
+
+			span {
+				font-family: $gothamMedium;
+				@include font-size(20px);
+				@include line-height(24px);
+				text-decoration: none;
+				color: $lightOrange;
+				display: block;
+			}
+		}
+	}
+
+	// =============================================================================
+	// -- Avance de Obra
+	// =============================================================================
+	&#ubicacion {
+		background: url(../images/face-boulevard/m_bg_ubicacion.jpg) center center no-repeat;
+		background-size: cover;
+		min-height: 460px;
+		padding: 0 16px;
+
+		article {
+			@include size(100%, 100%);
+			min-height: 460px;
+			// flex
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.container {
+			margin: auto;
+			text-align: center;
+		}
+
+		h2 {
+			font-family: $gothamMedium;
+			@include font-size(20px);
+			@include line-height(24px);
+			text-shadow: 0 0 10px $black-70;
+			color: $white;
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -44,8 +140,19 @@ section {
 
 	h2 {
 		font-family: $gothamBook;
-		@include font-size(19px);
-		@include line-height(23px);
+		@include font-size(14px);
+		@include line-height(18px);
+
+		em {
+			font-family: $gothamMedium;
+		}
+	}
+
+	@media #{$breakpoint-smartphone-big} {
+		h2 {
+			@include font-size(19px);
+			@include line-height(23px);
+		}
 	}
 }
 
@@ -65,19 +172,14 @@ section {
 
 	li {
 		@include size(100%, auto);
-		background-color: $ultraDarkGray;
-		text-align: center;
 		margin: auto auto 21px;
 	}
 
-	a {
-		font-family: $gothamMedium;
-		color: $white;
-		@include font-size(20px);
-		@include line-height(48px);
-		text-decoration: none;
+	.btn {
+		@include size(100%, 48px);
 	}
 }
+
 
 
 

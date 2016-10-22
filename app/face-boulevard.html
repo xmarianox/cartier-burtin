@@ -16,6 +16,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/vegas/dist/vegas.min.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -68,14 +69,14 @@
             <img src="images/face-boulevard/m-face-boulevard.jpg" alt="FACE Boulevard">
           </picture>
         </article>
-      </section>
+      </section><!-- .main_container -->
 
       <section class="section_separator">
         <article>
           <i class="ic ic_face_isotipo"></i>
           <h2>Emplazado en una de las zonas más<br> residenciales del municipio de Lambaré</h2>
         </article>
-      </section>
+      </section><!-- section_separator -->
 
       <section>
         <article>
@@ -88,68 +89,97 @@
           <i class="ic ic_face_isotipo"></i>
           <h2>Emplazado en una de las zonas más<br> residenciales del municipio de Lambaré</h2>
         </article>
-      </section>
+      </section><!-- section_separator -->
 
       <section id="departamentos">
         <article>
           <h1 class="indicator">DEPARTAMENTOS</h1>
 
           <ul class="departamentos_selector">
-            <li><a href="">FRENTE 3 DORM</a></li>
-            <li><a href="">CONTRAFRENTE 2 DORM</a></li>
-            <li><a href="">PENTHOUSE</a></li>
-            <li><a href="">CONTRAFRENTE 1 DORM</a></li>
+            <li><button class="btn btn_primary">FRENTE 3 DORM</button></li>
+            <li><button class="btn btn_primary">CONTRAFRENTE 2 DORM</button></li>
+            <li><button class="btn btn_primary">PENTHOUSE</button></li>
+            <li><button class="btn btn_primary">CONTRAFRENTE 1 DORM</button></li>
           </ul>
         </article>
-      </section>
+      </section><!-- departamentos -->
 
       <section class="section_separator">
         <article>
           <i class="ic ic_face_isotipo"></i>
-          <h2>Emplazado en una de las zonas más<br> residenciales del municipio de Lambaré</h2>
+          <h2><em>Face Boulevard Tower</em> dispone como amenities de una piscina,<br> un SUM con parrilla y cocina y muchos más beneficios.</h2>
         </article>
-      </section>
+      </section><!-- section_separator -->
 
-      <section>
+      <section id="amenities">
         <article>
-          AMENITIES
+          <h1 class="indicator">AMENITIES</h1>
+
+          <ul>
+            <li>SUM</li>
+            <li>Piscina</li>
+            <li>Gimnasio</li>
+            <li>Play-room</li>
+            <li>Baños sexados</li>
+            <li>Parrilla-Cocina</li>
+          </ul>
+
+          <button class="btn btn_primary">VER PLANO</button>
+
+          <p>32,6 mts. sobre nivel de calle (421,7m<sup>2</sup> Totales)</p>
+
         </article>
-      </section>
+      </section><!-- #amenities -->
 
       <section class="section_separator">
         <article>
           <i class="ic ic_face_isotipo"></i>
-          <h2>Emplazado en una de las zonas más<br> residenciales del municipio de Lambaré</h2>
+          <h2><em>Face Boulevard Tower</em> se desarrolla y crece como un referente<br> de estilo y calidad, que trasciende fronteras y economías.</h2>
         </article>
-      </section>
+      </section><!-- section_separator -->
 
-      <section>
+      <section id="avance_de_obra">
         <article>
-          AVANCE DE OBRA
+          <h1 class="indicator">AVANCE DE OBRA</h1>
+
+          <div class="container">
+            <h2>¿Quieres conocer el status de obra de Face Boulevard?</h2>
+            <a href="#" title="VER WEBCAM">
+              <i class="ic ic_webcam"></i>
+              <span>VER WEBCAM</span>
+            </a>
+          </div>
+
         </article>
-      </section>
+      </section><!-- #avance_de_obra -->
 
       <section class="section_separator">
         <article>
           <i class="ic ic_face_isotipo"></i>
-          <h2>Emplazado en una de las zonas más<br> residenciales del municipio de Lambaré</h2>
-        </article>
+          <h2><em>Face Boulevard Tower</em> busca la optimización de las<br> vistas naturales y la perfecta armonía con el entorno</h2>
+        </article><!-- section_separator -->
       </section>
 
-      <section>
+      <section id="ubicacion">
         <article>
-          ubicación y contacto
+          <h1 class="indicator">UBICACIÓN Y CONTACTO</h1>
+
+          <div class="container">
+            <h2>Av. Bruno Guggiari 543<br> c.Felicidad CP 2420<br> Lambaré, Paraguay</h2>
+            <button class="btn btn_primary">VER MAPA</button>
+          </div>
         </article>
-      </section>
+      </section><!-- ubicación y contacto -->
 
     </main>
 
     <footer>
-      <i class="ic ic_logo_cb small"></i>
+      <div class="container">
+        <i class="ic ic_face_boulevard"></i>
+      </div>
     </footer>
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google Analytics -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -162,8 +192,11 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/vegas/dist/vegas.min.js"></script>
+    <script src="/bower_components/picturefill/dist/picturefill.js"></script>
     <script src="/bower_components/browser-detector/detect-browser.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

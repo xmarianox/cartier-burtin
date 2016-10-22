@@ -26,9 +26,18 @@
 		@include size(80px, 73px);
 	}
 
+	&_webcam {
+		background: url(../images/face-boulevard/ic_webcam.svg) center center no-repeat;
+		background-size: cover;
+		@include size(64px, 65px);
+	}
+
 	@media #{$breakpoint-smartphone-big} {
 		&_logo_cb {
 			@include size(388px, 209px);
+		}
+		&_webcam {
+			@include size(84px, 85px);
 		}
 	}
 }
