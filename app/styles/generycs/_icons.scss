@@ -14,6 +14,12 @@
 		}
 	}
 
+	&_logo_cb_footer {
+		background: url(../images/ic_logo_cb_footer.svg) center center no-repeat;
+		background-size: cover;
+		@include size(270px, 30px);
+	}
+
 	&_face_boulevard {
 		background: url(../images/face-boulevard/ic_face_logotipo.svg) center center no-repeat;
 		background-size: cover;
