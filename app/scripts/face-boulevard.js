@@ -16,4 +16,9 @@ $(document).ready(() => {
 		});
 	}
 
+	$('#btn_ver_mapa').click(event => {
+		event.preventDefault();
+		$('.content_mapa').toggle();
+	});
+
 });

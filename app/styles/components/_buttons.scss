@@ -10,7 +10,7 @@
   @include border-radius(0px);
   border: 1px solid transparent;
   background: transparent;
-  @include size(auto, 48px);
+  @include size(100%, 48px);
   cursor: pointer;
   // text
   text-decoration: none;

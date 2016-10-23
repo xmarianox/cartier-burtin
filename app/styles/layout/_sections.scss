@@ -99,22 +99,21 @@ section {
 		background: url(../images/face-boulevard/m_bg_ubicacion.jpg) center center no-repeat;
 		background-size: cover;
 		min-height: 460px;
-		padding: 0 16px;
+		position: relative;
 
 		article {
 			@include size(100%, 100%);
 			min-height: 460px;
-			// flex
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: space-between;
+			padding: 0 16px;
+			position: relative;
 		}
 
-		.container {
-			margin: auto;
-			text-align: center;
+		.indicator {
+	    	position: absolute;
+		    z-index: 3;
+		    top: 0;
+		    right: 0;
+		    left: 0;
 		}
 
 		h2 {
@@ -122,8 +121,44 @@ section {
 			@include font-size(20px);
 			@include line-height(24px);
 			text-shadow: 0 0 10px $black-70;
+			text-align: center;
 			color: $white;
-			margin-bottom: 30px;
+			// position
+			position: absolute;
+		    top: 30%;
+		    right: 16px;
+		    left: 16px;
+		}
+
+		#btn_ver_mapa {
+			max-width: 246px;
+			display: block;
+			margin: 0 auto;
+			// position
+			position: absolute;
+			z-index: 3;
+		    top: auto;
+		    right: 0px;
+		    bottom: 20%;
+		    left: 0px;
+		}
+
+		.content_mapa {
+			@include size(100%, 100%);
+			min-height: 460px;
+			display: none;
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			iframe {
+				@include size(100%, auto);
+				min-height: 460px;
+				display: block;
+			}
 		}
 	}
 }
