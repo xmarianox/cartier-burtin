@@ -14,10 +14,29 @@
 		}
 	}
 
+	// FOOTER
 	&_logo_cb_footer {
-		background: url(../images/ic_logo_cb_footer.svg) center center no-repeat;
+		background: url(../images/ic_logo_cb.svg) center center no-repeat;
 		background-size: cover;
-		@include size(270px, 30px);
+		@include size(108px, 58px);
+		//@include size(127px, 69px);
+		//@include size(151px, 81px);
+	}
+
+	&_logo_arq_campos {
+		background: url(../images/face-boulevard/ic_arq_campos.png) center center no-repeat;
+		background-size: cover;
+		@include size(51px, 58px);
+		//@include size(60px, 69px);
+		//@include size(79px, 90px);
+	}
+
+	&_logo_const_y_proyectos {
+		background: url(../images/face-boulevard/ic_const_y_proyectos.svg) center center no-repeat;
+		background-size: cover;
+		@include size(74px, 58px);
+		//@include size(87px, 69px);
+		//@include size(114px, 89px);
 	}
 
 	&_face_boulevard {
