@@ -69,8 +69,8 @@ $(document).ready(() => {
 		});
 	}
 
+	// set footet year
 	setYear('year');
-
 	// anchor navigation
 	$('a[href^="#"]').on('click', scrollNavigation);
 	// showMap
