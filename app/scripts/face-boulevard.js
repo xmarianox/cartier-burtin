@@ -69,6 +69,25 @@ $(document).ready(() => {
 		});
 	}
 
+	var e = $(".indicador");
+
+	$(document).scroll(function() {
+	    var o = $(window).scrollTop() + screen.height / 2,
+	    	t = -1,
+	    	a = null,
+	    	n = null ;
+
+	    $('.story').each(function() {
+	        n = Math.abs(o - ($(this).offset().top + $(this).height() / 2)), -1 === t ? (t = n, a = this) : t > n && (t = n, a = this);
+	    });
+
+	    e.find('a.active').removeClass('active'),
+	    e.find('a#nav_' + $(a).attr('id')).addClass('active')
+	});
+
+
+
+
 	// set footet year
 	setYear('year');
 	// anchor navigation

@@ -1,0 +1,73 @@
+// =============================================================================
+// - Indicator element
+// =============================================================================
+.indicador {
+	display: none;
+
+	@media #{$breakpoint-tablet-land} {
+		position: fixed;
+		z-index: 100;
+		top: 14%;
+		left: 25px;
+		display: block;
+
+		li {
+			font-family: $gothamMedium;
+
+			a {
+				@include size(136px, 63px);
+				display: inline-block;
+				vertical-align: bottom;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		&_item_name {
+			@include font-size(14px);
+			@include line-height(18px);
+			text-shadow: 0 0 10px $black-70;
+			display: none;
+		}
+
+		&_item_bar {
+			background-color: $white;
+			@include size(40px, 12px);
+		    display: inline-block;
+		    vertical-align: bottom;
+		    -webkit-transition-property: width;
+		    -webkit-transition-duration: 1s;
+		    -webkit-transition-timing-function: linear;
+		    transition-property: width;
+		    transition-duration: 1s;
+		    transition-timing-function: linear;
+		    margin-top: 48px;
+		}
+
+		.black_bar {
+			background-color: $black;
+			@include size(40px, 12px);
+			display: block;
+		}
+
+		.active {
+			& > .indicador_item_name {
+				display: block;
+				margin-top: 25px;
+			}
+
+			& > .indicador_item_bar {
+				width: 100%;
+				margin-top: 8px;
+			}
+		}
+
+		#nav_ubicacion {
+			&.active {
+				& > .indicador_item_name {
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+}
