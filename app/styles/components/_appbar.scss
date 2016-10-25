@@ -19,12 +19,17 @@
 	align-items: center;
 	justify-content: space-between;
 
-
-
 	// =============================================================================
 	// - Responsive
 	// =============================================================================
 	@media #{$breakpoint-tablet-port} {}
+	@media #{$breakpoint-tablet-land} {
+		justify-content: center;
+
+		.btn_lines {
+			display: none;
+		}
+	}
 }
 
 // =============================================================================

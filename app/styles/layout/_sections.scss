@@ -16,6 +16,18 @@ section {
 		@include font-size(18px);
 		@include line-height(38px);
 		text-align: center;
+
+		@media #{$breakpoint-tablet-land} {
+			@include font-size(25px);
+			@include line-height(38px);
+			max-width: 380px;
+		}
+
+		@media #{$breakpoint-laptop-big} {
+			@include font-size(30px);
+			@include line-height(48px);
+			max-width: 430px;
+		}
 	}
 
 	// =============================================================================
@@ -36,6 +48,29 @@ section {
 		background-size: cover;
 		min-height: 460px;
 		padding: 0 16px;
+
+		@media #{$breakpoint-tablet-land} {
+			background: url(../images/face-boulevard/bg_departamentos.jpg) center center fixed no-repeat;
+			background-size: cover;
+			min-height: 600px;
+			//min-height: 760px;
+		}
+	}
+
+	// =============================================================================
+	// -- Amenities
+	// =============================================================================
+	&#amenities {
+		background: url(../images/face-boulevard/m_bg_amenities.jpg) center center no-repeat;
+		background-size: cover;
+		min-height: 460px;
+		padding: 0 16px;
+
+		@media #{$breakpoint-tablet-land} {
+			background: url(../images/face-boulevard/bg_amenities.jpg) center center fixed no-repeat;
+			background-size: cover;
+			min-height: 600px;
+		}
 	}
 
 	// =============================================================================
@@ -88,6 +123,22 @@ section {
 				text-decoration: none;
 				color: $lightOrange;
 				display: block;
+			}
+		}
+
+		@media #{$breakpoint-tablet-land} {
+			background: url(../images/face-boulevard/bg_avance.jpg) center center fixed no-repeat;
+			background-size: cover;
+			min-height: 600px;
+			//min-height: 760px;
+
+			article {
+				min-height: 600px;
+			}
+
+			h2 {
+				@include font-size(40px);
+				@include line-height(54px);
 			}
 		}
 	}
@@ -160,6 +211,42 @@ section {
 				display: block;
 			}
 		}
+
+		@media #{$breakpoint-tablet-land} {
+			background: url(../images/face-boulevard/bg_ubicacion.jpg) center center fixed no-repeat;
+			background-size: cover;
+			min-height: 600px;
+			//min-height: 760px;
+
+			article {
+				min-height: 600px;
+			}
+
+			h2 {
+				@include font-size(40px);
+				@include line-height(54px);
+
+				br {
+					display: none;
+				}
+				span {
+					display: block;
+					@include font-size(30px);
+				}
+			}
+
+			#btn_ver_mapa {
+				top: 55%;
+				bottom: auto;
+			}
+
+			.content_mapa {
+				min-height: 600px;
+				iframe {
+					min-height: 600px;
+				}
+			}
+		}
 	}
 }
 
@@ -189,6 +276,17 @@ section {
 			@include line-height(23px);
 		}
 	}
+
+	@media #{$breakpoint-tablet-land} {
+		padding: 24px;
+	}
+
+	@media #{$breakpoint-desktop-medium} {
+		h2 {
+			@include font-size(28px);
+			@include line-height(36px);
+		}
+	}
 }
 
 // =============================================================================
@@ -213,6 +311,16 @@ section {
 	.btn {
 		@include size(100%, 48px);
 	}
+
+	@media #{$breakpoint-tablet-land} {
+		margin: 15% auto auto;
+		max-width: 830px;
+
+		li {
+			@include size(calc(50% - 26px), auto);
+		}
+	}
+
 }
 
 
