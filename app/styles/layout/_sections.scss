@@ -328,6 +328,10 @@ section {
 			}
 		}
 
+		.ic_up {
+			display: none;
+		}
+
 		#btn_ver_mapa {
 			max-width: 246px;
 			display: block;
@@ -361,6 +365,15 @@ section {
 		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_ubicacion.jpg) center center no-repeat;
 			background-size: cover;
+
+			.ic_up {
+				display: block;
+				margin: 0 auto;
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    bottom: 35px;
+			}
 		}
 		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
@@ -440,7 +453,7 @@ section {
 	}
 
 	@media #{$breakpoint-tablet-land} {
-		padding: 24px;
+		padding: 24px 24px 35px;
 
 		article {
 			max-width: 80%;
@@ -450,8 +463,8 @@ section {
 
 	@media #{$breakpoint-desktop-medium} {
 		h2 {
-			@include font-size(28px);
-			@include line-height(36px);
+			@include font-size(22px);
+			@include line-height(32px);
 		}
 	}
 }

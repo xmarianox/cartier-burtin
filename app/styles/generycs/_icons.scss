@@ -70,6 +70,12 @@
 		@include size(28px, 29px);
 	}
 
+	&_up {
+		background: url(../images/ic_up.svg) center center no-repeat;
+		background-size: cover;
+		@include size(67px, 67px);
+	}
+
 	@media #{$breakpoint-smartphone-big} {
 		&_logo_cb {
 			@include size(388px, 209px);
