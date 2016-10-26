@@ -53,6 +53,16 @@ const toggleMapView = (event) => {
     $('.content_mapa').toggle();
 }
 
+const openModal = (event) => {
+	'use strict';
+	event.preventDefault();
+	let flatSelected = $(event.currentTarget).data('flat');
+	$('#' + flatSelected).addClass('visible');
+	$('#' + flatSelected + ' ul').slick({
+		fade: true
+	});
+}
+
 /*
  *	Ready Callback
  */
@@ -85,21 +95,24 @@ $(document).ready(() => {
 	    e.find('a#nav_' + $(a).attr('id')).addClass('active')
 	});
 
-	$('#btn_ver_plano').click((event) => {
-		event.preventDefault();
-		$('#amenities_modal').addClass('visible');
-	});
-
-	$('.btn_close_modal').click((event) => {
-		event.preventDefault();
-		$('.modal').removeClass('visible');
-	});
-
 	// set footet year
 	setYear('year');
 	// anchor navigation
 	$('a[href^="#"]').on('click', scrollNavigation);
 	// showMap
 	$('#btn_ver_mapa').on('click', toggleMapView);
+	// open apartments modals
+	$('.btn_open_plantas').on('click', openModal);
+	// show amenity modal
+	$('#btn_ver_plano').click((event) => {
+		event.preventDefault();
+		$('#amenities_modal').addClass('visible');
+	});
+	// close modals
+	$('.btn_close_modal').click((event) => {
+		event.preventDefault();
+		$('.modal').removeClass('visible');
+		$('.modal ul').slick('unslick');
+	});
 
 });
