@@ -27,6 +27,12 @@
     border: 1px solid $ultraDarkGray80;
     max-width: 400px;
   }
+
+  &_close_modal {
+    @include size(32px, 32px);
+    border: none;
+    padding: 0;
+  }
 }
 
 // =============================================================================

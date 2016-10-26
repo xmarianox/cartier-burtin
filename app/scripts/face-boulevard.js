@@ -69,7 +69,7 @@ $(document).ready(() => {
 		});
 	}
 
-	var e = $(".indicador");
+	var e = $('.indicador');
 
 	$(document).scroll(function() {
 	    var o = $(window).scrollTop() + screen.height / 2,
@@ -85,8 +85,15 @@ $(document).ready(() => {
 	    e.find('a#nav_' + $(a).attr('id')).addClass('active')
 	});
 
+	$('#btn_ver_plano').click((event) => {
+		event.preventDefault();
+		$('#amenities_modal').addClass('visible');
+	});
 
-
+	$('.btn_close_modal').click((event) => {
+		event.preventDefault();
+		$('.modal').removeClass('visible');
+	});
 
 	// set footet year
 	setYear('year');

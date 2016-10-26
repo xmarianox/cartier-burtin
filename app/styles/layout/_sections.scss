@@ -90,7 +90,7 @@ section {
 		background-size: cover;
 		min-height: 460px;
 		padding: 0 16px;
-
+		position: relative;
 
 		article {
 			@include size(100%, 100%);
@@ -150,6 +150,28 @@ section {
 
 		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
+
+			article {
+				min-height: 600px;
+			}
+
+			ul {
+				text-align: right;
+				margin: auto auto 40px;
+
+				li {
+					@include font-size(34px);
+					@include line-height(48px);
+				}
+			}
+
+			#btn_ver_plano {
+				margin: 20px auto 30px;
+			}
+
+			p {
+				margin: 0px auto 40px;
+			}
 		}
 
 		@media #{$breakpoint-laptop-small} {
@@ -409,6 +431,11 @@ section {
 
 	.btn {
 		@include size(100%, 48px);
+	}
+
+	@media #{$breakpoint-smartphone-big-landscape} {
+		max-width: 400px;
+    	margin: 60px auto;
 	}
 
 	@media #{$breakpoint-tablet-land} {

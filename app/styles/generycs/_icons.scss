@@ -57,6 +57,13 @@
 		@include size(64px, 65px);
 	}
 
+	&_close {
+		background: url(../images/ic_close.svg) center center no-repeat;
+		background-size: cover;
+		@include size(32px, 32px);
+		//@include size(44px, 44px);
+	}
+
 	@media #{$breakpoint-smartphone-big} {
 		&_logo_cb {
 			@include size(388px, 209px);

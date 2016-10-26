@@ -13,4 +13,4 @@
 - [x] - Cambiar el texto del button ver mapa cuando el mapa esta visible.
 - [x] - Indicador de secciones.
 - [x] - Anclas de navegación.
-- [ ] - Footer para pantallas grandes.
+- [x] - Footer para pantallas grandes.
