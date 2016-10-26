@@ -68,15 +68,19 @@
 
 	@media #{$breakpoint-smartphone-big-landscape} {
 		&_logo_cb_footer {
-			@include size(129px, 69px);
+			@include size(151px, 81px);
 		}
 
 		&_logo_arq_campos {
-			@include size(60px, 69px);
+			@include size(79px, 90px);
 		}
 
 		&_logo_const_y_proyectos {
-			@include size(87px, 69px);
+			@include size(114px, 89px);
+		}
+
+		&_face_boulevard {
+			@include size(185px, 61px);
 		}
 	}
 }
