@@ -68,9 +68,12 @@ section {
 		min-height: 460px;
 		padding: 0 16px;
 
-		@media #{$breakpoint-tablet-land} {
+		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_departamentos.jpg) center center no-repeat;
 			background-size: cover;
+		}
+
+		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
 			//min-height: 760px;
 		}
@@ -140,9 +143,12 @@ section {
 			}
 		}
 
-		@media #{$breakpoint-tablet-land} {
+		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_amenities.jpg) center center no-repeat;
 			background-size: cover;
+		}
+
+		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
 		}
 
@@ -204,9 +210,12 @@ section {
 			}
 		}
 
-		@media #{$breakpoint-tablet-land} {
+		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_avance.jpg) center center no-repeat;
 			background-size: cover;
+		}
+
+		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
 			//min-height: 760px;
 
@@ -299,9 +308,12 @@ section {
 			}
 		}
 
-		@media #{$breakpoint-tablet-land} {
+		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_ubicacion.jpg) center center no-repeat;
 			background-size: cover;
+		}
+
+		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
 			//min-height: 760px;
 

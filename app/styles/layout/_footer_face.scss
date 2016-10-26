@@ -33,12 +33,12 @@ footer {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
 
 		&_item {
-			@include size(100%, auto);
-			margin: auto auto 16px;
+			@include size(33.33%, auto);
+			margin: 0px auto 16px;
 			// flex
 			display: flex;
 			flex-direction: row;
@@ -48,12 +48,12 @@ footer {
 		}
 
 		span {
-			@include size(45%, auto);
+			@include size(100%, auto);
 			color: $white;
 			font-family: $gothamBook;
 			@include font-size(12px);
 			@include line-height(14px);
-			margin: auto 0;
+			margin: auto auto 16px;
 		}
 
 		.ic {
@@ -104,38 +104,44 @@ footer {
 		color: $white;
 	}
 
-	@media #{$breakpoint-tablet-land} {
-		padding: 24px 16px;
-
-		.ic_face_boulevard {
-			margin: auto 16px auto 0px;
-		}
-
-		.logo_container {
-			@include size(40%, auto);
-			border-top: none;
-			border-right: 1px dotted $white;
-			border-bottom: none;
-			border-left: 1px dotted $white;
-			//
-			padding: 0;
-			margin: auto auto auto 0px;
-
-			&_item {
-				@include size(33.33%, auto);
-				margin: auto;
-			}
-
-			//width: 76px;
-    		//height: 60px;
-		}
-
-		.phone_container {
-			@include size(auto, auto);
-			border-right: 1px dotted $white;
-			border-bottom: none;
-			padding: 0;
-			margin: auto auto auto 0px;
+	@media #{$breakpoint-smartphone-big-landscape} {
+		.container {
+			max-width: 580px;
 		}
 	}
+
+	// @media #{$breakpoint-tablet-land} {
+	// 	padding: 24px 16px;
+
+	// 	.ic_face_boulevard {
+	// 		margin: auto 16px auto 0px;
+	// 	}
+
+	// 	.logo_container {
+	// 		@include size(40%, auto);
+	// 		border-top: none;
+	// 		border-right: 1px dotted $white;
+	// 		border-bottom: none;
+	// 		border-left: 1px dotted $white;
+	// 		//
+	// 		padding: 0;
+	// 		margin: auto auto auto 0px;
+
+	// 		&_item {
+	// 			@include size(33.33%, auto);
+	// 			margin: auto;
+	// 		}
+
+	// 		//width: 76px;
+ //    		//height: 60px;
+	// 	}
+
+	// 	.phone_container {
+	// 		@include size(auto, auto);
+	// 		border-right: 1px dotted $white;
+	// 		border-bottom: none;
+	// 		padding: 0;
+	// 		margin: auto auto auto 0px;
+	// 	}
+	// }
 }

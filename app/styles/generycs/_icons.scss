@@ -18,7 +18,7 @@
 	&_logo_cb_footer {
 		background: url(../images/ic_logo_cb.svg) center center no-repeat;
 		background-size: cover;
-		@include size(108px, 58px);
+		@include size(95px, 51px);
 		//@include size(127px, 69px);
 		//@include size(151px, 81px);
 	}
@@ -63,6 +63,20 @@
 		}
 		&_webcam {
 			@include size(85px, 85px);
+		}
+	}
+
+	@media #{$breakpoint-smartphone-big-landscape} {
+		&_logo_cb_footer {
+			@include size(129px, 69px);
+		}
+
+		&_logo_arq_campos {
+			@include size(60px, 69px);
+		}
+
+		&_logo_const_y_proyectos {
+			@include size(87px, 69px);
 		}
 	}
 }

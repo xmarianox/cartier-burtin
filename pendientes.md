@@ -1,10 +1,10 @@
 # Pendientes
 
-- [ ] - favicon
-- [ ] - description del sitio
-- [ ] - link a las cámaras
-- [ ] - Google Analytics, o yo le agrego uno mío.
-- [ ] - Video
+- [x] - favicon
+- [x] - description del sitio
+- [ ] - link a las cámaras (pendiente)
+- [x] - Google Analytics, o yo le agrego uno mío.
+- [x] - Video
 
 - [ ] - Modal con el slider de las plantas.
 - [x] - Ajustes del layout de amenities.
