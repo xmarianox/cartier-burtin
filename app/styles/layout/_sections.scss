@@ -75,10 +75,12 @@ section {
 
 		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
-			//min-height: 760px;
 		}
 		@media #{$breakpoint-laptop-small} {
 			background-attachment: fixed;
+		}
+		@media #{$breakpoint-laptop-big} {
+			min-height: 760px;
 		}
 	}
 
@@ -135,19 +137,16 @@ section {
 				@include font-size(16px);
 			}
 		}
-
 		@media #{$breakpoint-smartphone-big} {
 			p {
 				@include font-size(18px);
 				@include line-height(20px);
 			}
 		}
-
 		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_amenities.jpg) center center no-repeat;
 			background-size: cover;
 		}
-
 		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
 
@@ -173,9 +172,15 @@ section {
 				margin: 0px auto 40px;
 			}
 		}
-
 		@media #{$breakpoint-laptop-small} {
 			background-attachment: fixed;
+		}
+		@media #{$breakpoint-laptop-big} {
+			min-height: 760px;
+
+			article {
+				min-height: 760px;
+			}
 		}
 	}
 
@@ -231,15 +236,12 @@ section {
 				display: block;
 			}
 		}
-
 		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_avance.jpg) center center no-repeat;
 			background-size: cover;
 		}
-
 		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
-			//min-height: 760px;
 
 			article {
 				min-height: 600px;
@@ -250,9 +252,15 @@ section {
 				@include line-height(54px);
 			}
 		}
-
 		@media #{$breakpoint-laptop-small} {
 			background-attachment: fixed;
+		}
+		@media #{$breakpoint-laptop-big} {
+			min-height: 760px;
+
+			article {
+				min-height: 760px;
+			}
 		}
 	}
 
@@ -329,15 +337,12 @@ section {
 				display: block;
 			}
 		}
-
 		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_ubicacion.jpg) center center no-repeat;
 			background-size: cover;
 		}
-
 		@media #{$breakpoint-tablet-land} {
 			min-height: 600px;
-			//min-height: 760px;
 
 			article {
 				min-height: 600px;
@@ -364,9 +369,20 @@ section {
 				}
 			}
 		}
-
 		@media #{$breakpoint-laptop-small} {
 			background-attachment: fixed;
+		}
+		@media #{$breakpoint-laptop-big} {
+			min-height: 760px;
+			article {
+				min-height: 760px;
+			}
+			.content_mapa {
+				min-height: 760px;
+				iframe {
+					min-height: 760px;
+				}
+			}
 		}
 	}
 }
