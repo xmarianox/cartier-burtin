@@ -77,6 +77,12 @@ $(document).ready(() => {
 			$(event.currentTarget).toggleClass('close');
 			$('menu').toggleClass('visible');
 		});
+
+		$('menu a').click(event => {
+			event.preventDefault();
+			$('.btn_lines').removeClass('close');
+			$('menu').removeClass('visible');
+		});
 	}
 
 	var e = $('.indicador');
@@ -112,7 +118,7 @@ $(document).ready(() => {
 	$('.btn_close_modal').click((event) => {
 		event.preventDefault();
 		$('.modal').removeClass('visible');
-		$('.modal ul').slick('unslick');
+		// $('.modal ul').slick('unslick');
 	});
 
 });

@@ -14,7 +14,7 @@
   cursor: pointer;
   // text
   text-decoration: none;
-  @include font-size(20px);
+  @include font-size(16px);
   @include line-height(46px);
   vertical-align: middle;
   white-space: nowrap;
@@ -32,6 +32,10 @@
     @include size(32px, 32px);
     border: none;
     padding: 0;
+  }
+
+  @media #{$breakpoint-smartphone-big} {
+    @include font-size(20px);
   }
 }
 

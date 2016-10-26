@@ -69,6 +69,19 @@ section {
 		padding: 0 16px;
 		position: relative;
 
+		.btn_primary {
+			.ic {
+				vertical-align: middle;
+			}
+		}
+
+		@media #{$breakpoint-smartphone-big-landscape} {
+			.btn_primary {
+				display: block;
+				margin: auto;
+			}
+		}
+
 		@media #{$breakpoint-tablet-port} {
 			background: url(../images/face-boulevard/bg_departamentos.jpg) center center no-repeat;
 			background-size: cover;
@@ -112,7 +125,7 @@ section {
 			text-align: center;
 
 			li {
-				font-family: $gothamMedium;
+				font-family: $gothamBook;
 				@include font-size(28px);
 				@include line-height(38px);
 				text-shadow: 0 0 10px $black-70;
@@ -175,6 +188,13 @@ section {
 		}
 		@media #{$breakpoint-laptop-small} {
 			background-attachment: fixed;
+
+			ul {
+				li {
+					@include font-size(44px);
+					@include line-height(54px);
+				}
+			}
 		}
 		@media #{$breakpoint-laptop-big} {
 			min-height: 760px;
@@ -389,7 +409,7 @@ section {
 }
 
 .section_separator {
-	background: $teal url(../images/bg-divider.jpg) center center no-repeat;
+	background: $teal url(../images/m-bg-divider.jpg) center center no-repeat;
 	background-size: cover;
 	text-align: center;
 	padding: 16px;
@@ -402,6 +422,7 @@ section {
 		font-family: $gothamBook;
 		@include font-size(14px);
 		@include line-height(18px);
+		color: $texts;
 
 		em {
 			font-family: $gothamMedium;
@@ -409,14 +430,22 @@ section {
 	}
 
 	@media #{$breakpoint-smartphone-big} {
+		background: $teal url(../images/bg-divider.jpg) center center no-repeat;
+		background-size: cover;
+
 		h2 {
-			@include font-size(19px);
-			@include line-height(23px);
+			@include font-size(16px);
+			@include line-height(20px);
 		}
 	}
 
 	@media #{$breakpoint-tablet-land} {
 		padding: 24px;
+
+		article {
+			max-width: 80%;
+			margin: 0 auto;
+		}
 	}
 
 	@media #{$breakpoint-desktop-medium} {
@@ -452,7 +481,7 @@ section {
 
 	@media #{$breakpoint-smartphone-big-landscape} {
 		max-width: 400px;
-    	margin: 60px auto;
+    	margin: 60px auto 0;
 	}
 
 	@media #{$breakpoint-tablet-land} {

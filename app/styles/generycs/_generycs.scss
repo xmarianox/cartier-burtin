@@ -62,4 +62,8 @@ hr {
   @media #{$breakpoint-smartphone-big-landscape} {
     margin-top: 73px;
   }
+
+  @media #{$breakpoint-tablet-land} {
+    margin-top: 100px;
+  }
 }

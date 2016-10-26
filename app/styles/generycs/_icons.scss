@@ -48,7 +48,7 @@
 	&_face_isotipo {
 		background: url(../images/face-boulevard/ic_face_isotipo.svg) center center no-repeat;
 		background-size: cover;
-		@include size(80px, 73px);
+		@include size(70px, 74px);
 	}
 
 	&_webcam {
@@ -62,6 +62,12 @@
 		background-size: cover;
 		@include size(32px, 32px);
 		//@include size(44px, 44px);
+	}
+
+	&_pdf {
+		background: url(../images/ic_pdf.svg) center center no-repeat;
+		background-size: cover;
+		@include size(28px, 29px);
 	}
 
 	@media #{$breakpoint-smartphone-big} {

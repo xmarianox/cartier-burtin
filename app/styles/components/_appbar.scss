@@ -24,6 +24,7 @@
 	// =============================================================================
 	@media #{$breakpoint-tablet-port} {}
 	@media #{$breakpoint-tablet-land} {
+		@include size(100%, 100px);
 		justify-content: center;
 
 		.btn_lines {
