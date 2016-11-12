@@ -17,9 +17,9 @@
 	// FOOTER
 	&_logo_cb_footer {
 		background: url(../images/ic_logo_cb.svg) center center no-repeat;
-		background-size: cover;
-		@include size(95px, 51px);
-		//@include size(127px, 69px);
+		//background-size: cover;
+		//@include size(95px, 51px);
+		@include size(106px, 58px);
 		//@include size(151px, 81px);
 	}
 
@@ -42,7 +42,8 @@
 	&_face_boulevard {
 		background: url(../images/face-boulevard/ic_face_logotipo.svg) center center no-repeat;
 		background-size: cover;
-		@include size(142px, 46px);
+		//@include size(142px, 46px);
+		@include size(172px, 56px);
 	}
 
 	&_face_isotipo {
@@ -87,7 +88,8 @@
 
 	@media #{$breakpoint-smartphone-big-landscape} {
 		&_logo_cb_footer {
-			@include size(151px, 81px);
+			/*@include size(151px, 81px);*/
+			@include size(169px, 89px);
 		}
 
 		&_logo_arq_campos {
@@ -99,7 +101,13 @@
 		}
 
 		&_face_boulevard {
-			@include size(185px, 61px);
+			@include size(221px, 72px);
 		}
+	}
+
+	@media #{$breakpoint-laptop-small} {
+		&_face_boulevard {
+			@include size(251px, 82px);
+		}	
 	}
 }

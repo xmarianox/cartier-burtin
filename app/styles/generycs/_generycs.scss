@@ -57,10 +57,10 @@ hr {
 .main_container {
   @include size(100%, auto);
   overflow: hidden;
-  margin-top: 58px;
+  margin-top: 68px;
 
   @media #{$breakpoint-smartphone-big-landscape} {
-    margin-top: 73px;
+    margin-top: 84px;
   }
 
   @media #{$breakpoint-tablet-land} {

@@ -25,4 +25,18 @@
 [x] - Los planos de la seccion departamentos usá los que te adjunto en el zip, cada imagen tiene como nombre de archivo el titulo que tiene que tener en el sitio.
 
 
+[x] - Mas presencia de logo FACE.
+Hacerlo mas grande ya seria demasido, creo que así esta bastante bien y no queda muy grande.
 
+[] - Cambiar los planos por los que te adjunto. La idea es que se vean tal cual estan, que ocupen el alto maximo de la pantalla.
+Que no sobre modal sino que tenga la forma del jpg. Si tiene que tener las flechas y la X para cerrar.
+
+[x] - Los textos deben ser los mismos que los del Brochure, hay que actualizarlos.
+TEXTO 1: OK
+TEXTO 2: Agregar al final: Todos los ambientes, incluídos la terraza y el quincho, cuentan con aire acondicionado frío/calor.
+TEXTO 3: Amenities con 421m2 en último piso (SUM con parrilla y cocina, baños sexados, piscina con solárium de 100m2, playroom, gimnasio y estares chill-out. 66 amplias cocheras en 3 plantas. Business Room 24 hs. open door. 
+TEXTO 4: Seguridad: Portería y guardia las 24 hs, cámaras de monitoreo, salidas de emergencia, escalera presurizada, iluminación, grupo electrógeno para todos los departamentos y el edificio. 2 ascensores de última generación que van del 1er subsuelo hasta los amenities.
+TEXTO 5: Estilo, distinción y sobre todo “Calidad de Vida”. Inicio de Obra: Enero 2017
+
+[X] - Ampliar un poco el logo de Cartier Burtin, no se lee bien “Desarrolla e invierte”
+Listo creo que ahora se ve un poco mejor.
