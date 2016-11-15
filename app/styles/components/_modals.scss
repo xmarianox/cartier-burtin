@@ -61,7 +61,7 @@
 	// @media #{$breakpoint-tablet-land} {}
 	@media #{$breakpoint-laptop-small} {
 		&_body {
-			max-width: 54%;
+			max-width: 696px;
 			max-height: 600px;
 		}
 
@@ -76,7 +76,7 @@
 
 	@media #{$breakpoint-laptop-big} {
 		&_body {
-			max-width: 61%;
+			max-width: 880px;
 			max-height: 760px;
 		}
 
